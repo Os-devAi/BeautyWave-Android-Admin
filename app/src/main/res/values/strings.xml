@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BeautyWave Admin</string>
+    <string-array name="estado">
+        <item>Disponible</item>
+        <item>Sin Stock</item>
+    </string-array>
+</resources>

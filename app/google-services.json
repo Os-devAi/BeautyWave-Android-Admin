@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "203683008384",
+    "project_id": "bewautywave",
+    "storage_bucket": "bewautywave.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203683008384:android:33139d5d41c80cd7fd7b65",
+        "android_client_info": {
+          "package_name": "com.nexusdev.beautywave"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4SPCImtltNprJsbyhXFu6k7QLnl36_UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203683008384:android:61210c3992bc9f53fd7b65",
+        "android_client_info": {
+          "package_name": "com.nexusdev.beautywaveadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4SPCImtltNprJsbyhXFu6k7QLnl36_UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
