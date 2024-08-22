@@ -60,6 +60,7 @@ class AddProductsActivity : AppCompatActivity() {
 
         click()
         setSpinnerData()
+        getData()
     }
 
     private fun click() {
@@ -75,7 +76,7 @@ class AddProductsActivity : AppCompatActivity() {
                             imgUrl = eventPost.photoUrl,
                             status = estado.toString(),
                             backOn = binding.backOn.toString(),
-                            category = categoria.toString(),
+                            category = binding.categoria.text.toString().trim(),
                         )
                         save(pd)
                         enableUI()
@@ -87,7 +88,7 @@ class AddProductsActivity : AppCompatActivity() {
                             imgUrl = eventPost.photoUrl
                             status = estado.toString()
                             backOn = binding.backOn.toString()
-                            category = binding.categoria.toString()
+                            category = binding.categoria.text.toString().trim()
                         }
                         enableUI()
                     }
@@ -123,6 +124,17 @@ class AddProductsActivity : AppCompatActivity() {
             binding.precio.setText(producto!!.price.toString())
             estado = (producto!!.status)
             categoria = (producto!!.category)
+            binding.spinnerEstado.setSelection(
+                resources.getStringArray(R.array.estado).indexOf(
+                    producto!!.status
+                )
+            )
+            if (producto!!.backOn.isNullOrEmpty()) {
+                binding.backOn.setText(" ")
+            } else {
+                binding.backOn.setText(producto!!.backOn)
+            }
+            binding.categoria.setText(categoria)
         }
     }
 

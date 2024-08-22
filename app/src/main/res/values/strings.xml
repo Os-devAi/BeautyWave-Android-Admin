@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">BeautyWave Admin</string>
+    <string name="disponibles">Disponibles</string>
+    <string name="todos">Todos</string>
+    <string name="ordenar_por_precio">Ordenar por precio</string>
+    <string name="productos_disponibles">Productos disponibles</string>
     <string-array name="estado">
         <item>Disponible</item>
         <item>Sin Stock</item>

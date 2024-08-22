@@ -10,15 +10,13 @@ import android.os.Looper
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.doOnLayout
 import com.nexusdev.beautywaveadmin.databinding.ActivityMainBinding
 import com.nexusdev.beautywaveadmin.view.products.AddProductsActivity
+import com.nexusdev.beautywaveadmin.view.products.ProductsActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,7 +49,11 @@ class MainActivity : AppCompatActivity() {
         binding.btnInsert.setOnClickListener {
             val intent = Intent(this, AddProductsActivity::class.java)
             startActivity(intent)
+        }
 
+        binding.btnPorducts.setOnClickListener {
+            val intent = Intent(this, ProductsActivity::class.java)
+            startActivity(intent)
         }
 
     }
